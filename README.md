@@ -6,9 +6,7 @@ A template for developing applications for the Tour de App competition with a fr
 
 ## Initial Setup
 
-In the frontend and backend directories, there are `.env.example` files that need to be renamed to `.env` and the values adjusted as needed.
-
-For production development, you need to set `VITE_API_URL` to the API server URL in the `tourdeapp.yaml` file to the URL you find on the main page of your project on [tourde.cloud](https://tourde.cloud/).
+In the backend directory, there is a `.env.example` file that needs to be renamed to `.env` and the values adjusted as needed.
 
 > [!WARNING]
 > If you want to change the database password, you need to change it in the `tourdeapp.yaml` file, `apps/server/.env`, and for local development in the `apps/server/package.json` file.
@@ -24,12 +22,6 @@ First, you need to set up environment variables:
 1. **Backend**: In the `apps/server` directory, rename the `.env.example` file to `.env`:
    ```bash
    cd apps/server
-   cp .env.example .env
-   ```
-
-2. **Frontend**: In the `apps/web` directory, rename the `.env.example` file to `.env`:
-   ```bash
-   cd ../web
    cp .env.example .env
    ```
 
@@ -153,9 +145,7 @@ How to submit your application can be found in our [How to deploy an app to Tour
 
 ## Prvotní nastavení
 
-V složkách pro frontend a backend jsou `.env.example` soubory, které je potřeba přejmenovat na `.env` a upravit hodnoty dle potřeby.
-
-Pro produkční vývoj je potřeba nastavit `VITE_API_URL` na URL API serveru v souboru `tourdeapp.yaml` na URL, kterou najdete na hlavní stránce Vašeho projektu na [tourde.cloud](https://tourde.cloud/).
+V složce pro backend je `.env.example` soubor, který je potřeba přejmenovat na `.env` a upravit hodnoty dle potřeby.
 
 > [!WARNING]
 > Pokud chcete měnit heslo od databáze, je potřeba ho změnit v souboru `tourdeapp.yaml`, `apps/server/.env` a pro lokální vývoj v souboru `apps/server/package.json`.
@@ -171,12 +161,6 @@ Nejprve je potřeba nastavit environmentální proměnné:
 1. **Backend**: V adresáři `apps/server` přejmenujte soubor `.env.example` na `.env`:
    ```bash
    cd apps/server
-   cp .env.example .env
-   ```
-
-2. **Frontend**: V adresáři `apps/web` přejmenujte soubor `.env.example` na `.env`:
-   ```bash
-   cd ../web
    cp .env.example .env
    ```
 
